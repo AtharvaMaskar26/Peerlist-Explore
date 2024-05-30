@@ -1,5 +1,0 @@
-sqlalchemy
-google.generativeai
-python-dotenv
-mysqlclient 
-pymysql
