@@ -1,5 +1,8 @@
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
+import streamlit as st
+import os 
+import google.generativeai as genai
 
 load_dotenv() # Load all env variables
 
@@ -68,10 +71,7 @@ prompt_for_single_values = """
 You are an expert communicator. You will be asked a question and given an answer. You have to write the answer so that the human understands it. Also write in first person if needed.   
 """
 
-import streamlit as st
-import os 
-import sqlite3
-import google.generativeai as genai
+
 
 # Configure API key 
 api_key = os.environ['GEMINI_API_KEY']
