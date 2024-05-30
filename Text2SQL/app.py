@@ -3,6 +3,7 @@ from sqlalchemy import create_engine, text
 
 load_dotenv() # Load all env variables
 
+from utils import display_header
 
 new_prompt = """
 You are an expert English to SQL Query converter! You will be asked an english question and have to have to respond with an SQL Query that would be useful to fetch required data. \n\n
@@ -101,10 +102,14 @@ def read_sql_query(query):
 
     return rows
 
+
+display_header()
+st.write("🔍Discover and Explore Peerlist Projects with Ease - Your One-Stop Solution for Finding and Learning About Projects on Peerlist")
+
 with st.form('my-form'):
     
 
-    question = st.text_input("Ask?")
+    question = st.text_input("Search on Peerlist")
 
     submitted = st.form_submit_button("Submit")
     if submitted:
