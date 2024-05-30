@@ -1,7 +1,7 @@
 import streamlit as st 
 from PIL import Image
 
-image = Image.open('./Peerlist.png')
+image = Image.open('./Text2SQL/utils/Peerlist.png')
 # 
 def display_header():
     """
