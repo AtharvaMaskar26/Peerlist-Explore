@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Load the JSON file into a DataFrame
-df = pd.read_json('../preprocessing/data.json')
+df = pd.read_json('./preprocessing/data.json')
 
 # Display the first few rows of the DataFrame
 print(df.head())
